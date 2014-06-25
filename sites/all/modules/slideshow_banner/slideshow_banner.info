@@ -1,0 +1,17 @@
+name = Slideshow Banner
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = slideshow_banner
+dependencies[] = features
+dependencies[] = flexslider_fields
+dependencies[] = flexslider_views
+dependencies[] = image
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[field_base][] = field_image_upload
+features[node][] = banner
+features[views_view][] = slideshow
+features_exclude[dependencies][ctools] = ctools
+features_exclude[field_instance][node-banner-field_image_upload] = node-banner-field_image_upload
